@@ -1,4 +1,26 @@
-ExternalFile = 'TurningBibleChapterTextFilesIntoLists/ch01.txt'
+# ExternalFile = 'TurningBibleChapterTextFilesIntoLists/ch01.txt'
+
+
+
+ExternalFile = input('What book of the Bible do you want to read? 1-66: ')
+ChapterNumber = input('What chapter? ')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 f = open(ExternalFile)
 names = []
 for line in f:
@@ -11,8 +33,3 @@ if verse == 0 or verse > len(names):
 else:
     print(names[verse])
 f.close()
-
-
-
-
-# By: Tommy H. Yeargin, Jr. I bid you peace.
