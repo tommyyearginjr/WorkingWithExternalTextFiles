@@ -1,3 +1,5 @@
+# Created 5/8/17 by Tommy H. Yeargin, Jr. Namaste.
+
 ExternalFile = input('What book of the Bible do you want to read? ')
 ChapterNumber = input('What chapter? ')
 Target = './bible/'+ExternalFile+'/ch'+ChapterNumber+'.txt'
