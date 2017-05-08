@@ -1,5 +1,5 @@
-ExternalFile = input('What book of the Bible do you want to read? (Available: 45): ')
-ChapterNumber = input('What chapter? (Available: 1): ')
+ExternalFile = input('What book of the Bible do you want to read? ')
+ChapterNumber = input('What chapter? ')
 Target = './bible/'+ExternalFile+'/ch'+ChapterNumber+'.txt'
 Target = str(Target)
 f = open(Target)
