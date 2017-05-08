@@ -1,27 +1,8 @@
-# ExternalFile = 'TurningBibleChapterTextFilesIntoLists/ch01.txt'
-
-
-
-ExternalFile = input('What book of the Bible do you want to read? 1-66: ')
-ChapterNumber = input('What chapter? ')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-f = open(ExternalFile)
+ExternalFile = input('What book of the Bible do you want to read? (Available: 45): ')
+ChapterNumber = input('What chapter? (Available: 1): ')
+Target = './bible/'+ExternalFile+'/ch'+ChapterNumber+'.txt'
+Target = str(Target)
+f = open(Target)
 names = []
 for line in f:
     if line != '' and line != '\n':
